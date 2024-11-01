@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .confirmation-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 110vh;
+        }
+
+        .confirmation-content {
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .icon-container {
+            margin-bottom: 20px;
+            animation: moveTick 2s ease-in-out infinite; /* Animation properties */
+        }
+
+        img {
+            width: 80px; /* Adjust the size of the green tick image */
+        }
+
+        h1 {
+            color: #4caf50; /* Green color for the heading */
+        }
+
+        p {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Keyframes for the movement animation */
+        @keyframes moveTick {
+            0%,100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+    <title>Order Confirmed</title>
+</head>
+<body background="images/bg.jpg">
+    <div class="confirmation-container">
+        <div class="confirmation-content">
+            <div class="icon-container">
+                <img src="images/green.jpg" alt="Green Tick">
+            </div>
+            <h1>Your Order has been confirmed!</h1>
+            <p><font color="red" >Thank you for ordering with us. Your order is on its way.</font></p>
+        </div>
+    </div>
+</body>
+</html>
